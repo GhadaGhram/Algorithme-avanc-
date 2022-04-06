@@ -1,0 +1,43 @@
+﻿Algorithme epees.collegues
+
+Variables i,n, k1,k2:entier
+          résultat:booléen
+          x:chaine de caractére
+          Nom:tableau[13]de chaînes de caractéres
+
+Nom={"Alban","Jim","Bob","Albatroz","Jinto","Bow","Hijo","Manu","Seb","Teilo","Charles","Xavier","Ghada"}
+
+Début
+   n=13
+   k1=1
+   K2=1
+   résultat=faux
+
+    Pour i  de 1 à n-1 Faire
+      Pour j de n à i+1 par pas de -1 faire
+       
+      Tantque(k1<longueur Nom[j]+1 et k2<longueur Nom[j-1]+1 et résultat=faux) faire
+           Si ascii(Nom[j][k1]< Nom[j-1][k2] )
+              Alors  résultat=faux
+                     x=Nom[j]
+                     Nom[j]=Nom[j-1]
+                     Nom[j-1]=x
+                     k1=k1+1
+                     K2=K2+1
+
+                     Sinon résultat=vrai
+                     
+                     Finsi
+ 
+          Finsi
+     Fintantque
+ 
+     Finpour
+    
+   Finpour
+Fin
+
+
+fonction triBulle(ref T :tableau[1..N] d'entiers) :vide;
+  var i,j,cle :entier;
+  début

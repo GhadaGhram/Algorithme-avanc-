@@ -1,0 +1,31 @@
+﻿Algorithme age_moussaillon_décroissant
+
+Age:tableau[8] d'entier
+Age={45,54,23,32,64,46,28,82}
+Variable Pos_max,i,j:entier
+Constante (n:entier)=8
+
+Début 
+   Pour i de 1 à n-1 faire
+      Pos_max=i
+         Pour  j  de i+1 à n faire
+               Si (Age[j]>Age[Pos_max]) Alors (Pos_max=j)
+               Finsi
+         Finpour
+      Si (Pos_max<>i) Alors Permute(Age[i],Age[Pos_max])
+      Finsi
+         retourner Age
+   Fin pour
+
+Fin
+
+
+
+
+
+
+
+
+
+
+

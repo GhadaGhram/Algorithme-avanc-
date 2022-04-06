@@ -1,0 +1,64 @@
+﻿Algorithme Palindrome
+Variable mot:chaîne de caractére
+         i,j:entier
+         résultat:booléen
+Début
+ i=1
+ j=longueur(mot)
+ résultat = Vrai;
+    Afficher("saisir un mot")
+    Saisir(mot)
+       Tantque ((résultat = Vrai) et (i < j)) Faire
+          Si(mot[i] = mot[j]) Alors  résultat = Vrai
+                                     i = i + 1
+                                     j = j - 1
+                Sinon  résultat = Faux
+                
+                Finsi
+          Finsi
+       Fintantque  
+Fin
+
+
+
+Fonction Palindrome(c:chaine de caractère): booléen; 
+Variable  i, j: entier;
+          résultat: booléen;   
+Début
+    i = 1;
+    j = longeur (c) ;
+    résultat = Vrai;
+    Tantque ((résultat = Vrai) et (i < j)) Faire
+        Si(c[i] = c[j]) Alors résultat = Vrai
+                              i = i + 1
+                              j = j - 1
+                       
+       
+            Sinon résultat= Faux
+           
+            Finsi
+
+        Finsi
+    FinTantque  
+Fin Fonction
+
+
+Programme Interaction_Utilisateur
+
+Variable mot:chaîne de caractére
+         i,j:entier
+         résultat:booléen
+Début
+    Afficher("saisir un mot")
+    Saisir(mot)
+    
+    Palindrome(mot)
+
+    Si résultat=vrai alors Afficher ("Le mot est Palindrome")
+        Sinon Afficher ("Le mot n'est pas Palindrome")
+        Finsi
+    Finsi
+
+Fin
+
+
