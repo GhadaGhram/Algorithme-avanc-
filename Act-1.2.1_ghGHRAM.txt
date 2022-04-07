@@ -38,6 +38,3 @@ Début
 Fin
 
 
-fonction triBulle(ref T :tableau[1..N] d'entiers) :vide;
-  var i,j,cle :entier;
-  début
